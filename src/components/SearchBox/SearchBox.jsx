@@ -9,6 +9,7 @@ const SearchBox = () => {
   const filter = useSelector(selectNameFilter);
 
   const handleChange = e => {
+    console.log('Input value:', e.target.value);
     dispatch(changeFilter(e.target.value));
   }
 
